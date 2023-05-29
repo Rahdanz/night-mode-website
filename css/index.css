@@ -1,0 +1,467 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #1a1c19;
+	transition: 0.5s;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* bantuan */
+html{
+	scroll-behavior: smooth;
+}
+.clear{
+	clear: both;
+}
+.bingkai{
+    border: 2px solid black;
+}
+a{
+    text-decoration: none;
+}
+
+/*my css */
+
+/* navbar */
+.navbar{
+    position: fixed;
+    display:flex;
+    width: 100%;
+    height: 64px;
+	align-content: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+	align-items: center;
+    background-color: #0f100f;
+	
+}
+.brand,.menu{
+    margin-left:30px;
+    margin-right: 30px;
+    font-family: Poppins;
+}
+.brand{
+margin-top: 4px;
+font-size: 50px;
+color: white;
+}
+b.titik{
+    font-size: 50px;
+    color: #fcd752;
+
+}
+.menu{
+    margin-top: 5px;
+}
+.menu a{
+padding: 10px;
+font-size: 20px;
+color: white;
+transition: 0.2;
+}
+.menu a:hover{
+	color:#fcd752;
+	border-bottom: #fcd752 2px solid;
+}
+
+
+/* carousel */
+.boxslide1{
+	margin: auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left:50px ;
+}
+.boxslide1 .content img{
+	width: 500px;
+}
+.h1{
+	font-family: Poppins;
+	font-size: 70px;
+	color: whitesmoke;
+}
+.rr{
+	color: #fcd752;
+	font-style: italic;
+	margin-bottom: 2px;
+}
+.tombol{
+	background-color: #fcd752;
+	display: flex;
+	width: 200px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-family: Poppins;
+	border-radius: 100px;
+
+}
+.tombol:hover{
+	background-color:#ffc805;
+}
+
+
+/* content */
+.containerz{
+    margin:0 auto;
+    width: 100%;
+    padding: 0px;
+}
+.text{
+	text-align: justify;
+	padding: 3px;
+}
+h3{
+	font-family: poppins;
+	font-style: italic;
+	font-size: 25px;
+}
+h5{
+	color:#fcd752;
+	font-family: Poppins;
+	font-size: 20px;
+}
+.rd{
+	font-style: italic;
+	color: #fcd752;
+}
+
+.contentcontainer{
+    display: flex;
+	width: 100%;
+}
+main.main{
+	width: 70%;
+	text-align: center;
+	border: 1px solid #fcd752;
+	border-radius: 15px;
+	padding:100px;
+}
+main.main h4{
+margin-top: -50px;
+margin-bottom: 50px;
+font-family: Poppins;
+font-size: 35px;
+color: #fcd752;
+}
+
+
+.hobby{
+	background-color:#0d0e0d ;
+	text-align: center;
+	padding: 5px;
+	width: fit-content;
+	height: fit-content;
+	transition: 0.5s;	
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: white;
+}
+.hobby:hover{
+	background-color: black;
+	box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.644) ;
+}
+.hobby:hover img{
+	border: 2px solid white;
+}
+p.judul{
+	font-style: bold;
+	font-family: poppins;
+}
+
+.kotaklogo img{
+	border-radius: 5px;
+
+	
+}
+.kotaklogo{
+	border-bottom: none;
+	
+}
+
+.boxhobby{
+	width: 100%;
+	height: fit-content;
+	margin: auto 0;
+	display:flex;
+	justify-content: space-evenly;
+	
+}
+
+aside{
+	width: 30%;
+	border: 1px solid #fcd752;
+	border-radius: 15px;
+	padding: 10px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+img.profile{
+	margin-right: 3px;
+	margin-bottom: 2px;
+	float: left;
+	width:150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+/* foter */
+.footer{
+text-align: center;
+color: white;
+font-family: Poppins;
+}
+
+.sosmed img{
+	margin: 5px;
+}
+
+
+/* css darkmode */
+body.white-mode {
+	background-color: whitesmoke;
+	transition: 0.5s;
+  }
+body.white-mode h1.h1{
+	color: black
+  }
+body.white-mode nav.navbar{
+	background-color: white;
+	box-shadow:  10px 10px 10px #c3c3c3 ;
+  }
+body.white-mode div.menu a{
+	color: grey;
+  }
+body.white-mode div.menu a:hover{
+	color:#fcd752;
+	border-bottom: #fcd752 2px solid;
+  }
+body.white-mode div.brand{
+	color: black;
+  }
+body.white-mode p.tentang{
+	color: black;
+}
+body.white-mode main.main{
+	border: 1px solid grey;
+}
+body.white-mode .rd{
+	color: orangered;
+}
+body.white-mode aside{
+	border: 1px solid grey;
+}
+body.white-mode main.main h4{
+	color:black;
+}
+body.white-mode footer.footer span{
+	color: black;
+}
+body.white-mode aside h5{
+	color: black;
+	font-style: italic;
+	
+}
+body.white-mode .hobby{
+	background-color: white;
+	box-shadow:  10px 10px 10px #c3c3c3 ;
+	color: black;
+}
+body.white-mode div.kotaklogo{
+	border-bottom: 1px solid white;
+}
+body.white-mode .hobby:hover{
+	box-shadow: 7px 7px 10px rgb(0, 0, 0);
+	border: none;
+}
+body.white-mode .tombol{
+	background-color: yellow;
+}
+body.white-mode .tombol:hover{
+	background-color: #fcd752;
+}
+body.white-mode .hobby:hover img{
+	border: none;
+}
+body.white-mode .hobby:hover div.kotaklogo p{
+	color: yellow;
+}
+body.white-mode h5{
+	font-family: poppins;
+	font-size: 20px;
+}
+
+/* css button darkmode */
+.darkmode{
+	position: relative;
+	width:40px;
+	height:20px;
+	appearance: none;
+	background-color:whitesmoke;
+	outline:none;
+	border-radius: 10px;
+	transition: 0.5s ease ;
+	cursor: pointer;
+	
+	
+}
+.darkmode:checked{
+	background: color #434343; 
+}
+.darkmode::before{
+	content: '';
+	position:absolute;
+	width: 16px;
+	height: 16px;
+	background-color: #434343;
+	border-radius: 50%;
+	top: 2px;
+	left: 2px;
+	transition: 0.5s ease;
+}
+.darkmode:checked::before{
+	transform: translateX(20px);
+}
+/* responsive */
+@media  screen and (max-width: 700px){
+	.boxslide1{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		padding-right: 5px; 
+	}
+	.content{
+		text-align: center;
+		margin-left: 30px;
+	}
+	.kotak img{
+		margin-top: 5px;
+		width: 0px;
+	}
+	.boxhobby{
+		display: block;
+		padding:0px;
+	}
+	.contentcontainer{
+		display: block;
+		width: 100%;
+		
+	}
+	.kotak img.profile{
+		float: none;
+	}
+	.hobby:hover{
+		transform: none;
+	}
+	.navbar{
+		display: block;
+		justify-content: center;
+		height: fit-content;
+		
+	}
+	.brand{
+		margin-left:  110px ;
+	}
+	.boxslide1{
+		margin-top: 80px;
+	}
+	.menu{
+		display: flex;
+		justify-content: space-between;
+		width: fit-content;
+		box-sizing: border-box;
+		margin-left: 10px;
+	}
+	.footer{
+		padding-left: 85px;
+	}
+	.kotaklogo img{
+		width:200px;
+	}
+	main.main{
+		width:70%;
+	
+	}
+	aside{
+		margin-top: 2px;
+		width:100%;
+		text-align: center;
+		padding: 42px;
+
+	}
+	.kotak img.profile{
+		width: 150px;
+		height: 150px;
+		float: none;
+		margin-bottom: 5px;
+		
+		
+
+	}
+	.hobby{
+		margin-top: 7px;
+
+	}
+	.darkmode{
+		margin-top: 10px;
+	}
+	
+}
+/* tablet */
+@media (min-width:701px) and (max-width: 860px){
+	.boxhobby{
+		height: fit-content;
+	
+	}
+	header.boxslide1{
+		width: 100%;
+	}
+	header.boxslide1 img{
+		width: 350px;
+	}
+	.footer{
+		padding-left: -10px;
+		height: fit-content;
+			
+	}
+}
